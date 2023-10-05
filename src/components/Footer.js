@@ -6,11 +6,12 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         {/* Contact Section */}
+        <div className="brand-header">
+          <p className='rectangle-icon'></p>
+          Contact Us
+        </div>
         <div className="contact-section">
-          <div className="brand-header">
-            <p className='rectangle-icon'></p>
-            Contact Us
-          </div>
+
           <div className="title">
             <p>Have a project in mind?</p>
             <p>Let's make it happen</p>
@@ -20,7 +21,8 @@ function Footer() {
         {/* Address */}
         <div className="address">
           <p>22 Street Name, Suburb, 8000,</p>
-          <p>Cape Town, South Africa</p>
+          <p>Cape Town, South Africa
+          </p>
           <p>+27 21 431 0001</p>
           <p>enquiry@website.co.za</p>
         </div>
@@ -57,13 +59,11 @@ function Footer() {
         {/* Additional Link */}
         <div className="additional-link">
           <a href="#">Explore open jobs</a>
+          <p>&copy; 2000 - 2023 Company Name</p>
         </div>
       </div>
 
-      {/* Copyright */}
-      <div className="copyright">
-        <p>&copy; 2000 - 2023 Company Name</p>
-      </div>
+
     </footer>
   );
 }
