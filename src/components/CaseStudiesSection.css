@@ -20,6 +20,7 @@
 .case-studies-cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .case-study-card {
@@ -30,6 +31,12 @@
   width: 399px;
   height: 399px;
   padding: 20px;
+  flex-basis: calc(33.33% - 20px); /* 33.33% width with 20px margin in between */
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Include padding and border in the width */
+  background-size: cover;
+  background-position: center;
+  border: none;
   background-size: cover;
   background-position: center;
   border: none; /* Hide the border */
