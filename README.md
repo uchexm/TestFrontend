@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Brands Test Backend</b></h3>
+  <h3><b>Brands Test Frontend</b></h3>
 
 </div>
 
@@ -32,9 +32,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Car Rentals Backend <a name="about-project"></a>
+# 📖 Brands Test Frontend <a name="about-project"></a>
 
-**Brand Test** is a Rails API that serves as database to the [Brands Test Frontend](https://github.com/uchexm/frontendtest.git) project for Accenture Interview process.
+**Brand Test Frontend** is a REACT project that converts a Figma design to UI and integrate data from API. The [Brands Test Backend](https://github.com/uchexm/TestBackend) project for Accenture Full stack Interview process.
 
 ## 🛠 Built With <a name="built-with"></a>
 
