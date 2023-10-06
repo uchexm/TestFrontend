@@ -18,24 +18,26 @@ function BrandSection({ fetchData, data, loading, error }) {
         }
 
         const data = await response.json();
-        setBrandIcons(data);
-        setLoading(false); // Set loading to false when data is fetched successfully
+
+        // Construct complete image URLs by prepending the base URL
+        const baseUrl = ''; // Leave baseUrl empty to use the same domain as your React app
+        const brandIconsWithUrls = data.map((brand) => ({
+          ...brand,
+          icon_url: baseUrl + '/icon/' + brand.icon_url, // Adjust the path as needed
+        }));
+
+
+        setBrandIcons(brandIconsWithUrls);
+        setLoading(false);
       } catch (error) {
-        setError(error); // Set the error state in case of an error
-        setLoading(false); // Set loading to false on error
+        setError(error);
+        setLoading(false);
       }
     }
 
+    // Call the fetchBrandIcons function here
     fetchBrandIcons();
-  }, [fetchData]);
-
-  if (loadingState) {
-    return <div>Loading...</div>; // Use loadingState instead of loading
-  }
-
-  if (errorState) {
-    return <div>Error: {errorState.message}</div>; // Use errorState instead of error
-  }
+  }, []); // Empty dependency array to run only once on component mount
 
   return (
     <section className="brand-container">
@@ -45,15 +47,18 @@ function BrandSection({ fetchData, data, loading, error }) {
       </div>
       <h2>Trusted by Leading Brands</h2>
       <div className="brand-cards">
-        {brandIcons.map((brand, index) => (
-          <div key={index} className="brand-card">
-            <img
-              src={brand.image_url}
-              alt={brand.name}
-              className="brand-icon"
-            />
-          </div>
-        ))}
+        {brandIcons.map((brand, index) => {
+          console.log(brand.icon_url); // Add this line to check the URLs
+          return (
+            <div key={index} className="brand-card">
+              <img
+                src={brand.icon_url}
+                alt={`Brand ${index}`}
+                className="brand-icon"
+              />
+            </div>
+          );
+        })}
       </div>
     </section>
   );
