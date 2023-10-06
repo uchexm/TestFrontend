@@ -11,7 +11,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Car Rentals Backend ](#-car-rentals-backend-)
+- [📖 Brands Test Frontend](#-Brands-Test-Frontend-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -20,10 +20,9 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
-    - [Setup database](#setup-database)
     - [Usage](#usage)
     - [Run tests](#run-tests)
-  - [👥 Authors ](#-authors-)
+  - [👥 Author](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
