@@ -48,7 +48,7 @@ function BrandSection({ fetchData, data, loading, error }) {
         {brandIcons.map((brand, index) => (
           <div key={index} className="brand-card">
             <img
-              src={brand.slug}
+              src={brand.image_url}
               alt={brand.name}
               className="brand-icon"
             />

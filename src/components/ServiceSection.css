@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column; 
   align-items: center; 
-  width: 1281px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   
@@ -66,4 +66,21 @@
 .service-description {
   color: #000;
   
+}
+
+/* Add this CSS code for responsive styles */
+@media (max-width: 768px) {
+  .service-section {
+    padding: 10px; 
+    overflow: hidden;
+  }
+
+  .services-container {
+    flex-direction: column; /* Stack services vertically on smaller screens */
+  }
+
+  .service {
+    width: 90%; /* Adjust the width of each service on smaller screens */
+    margin: 20px auto; /* Center the services horizontally on smaller screens */
+  }
 }
