@@ -1,0 +1,64 @@
+/* CaseStudiesSection.css */
+.case-studies-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.case-studies-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rectangle-icon {
+  width: 40px;
+  height: 4px;
+  background: var(--primary-active, #D100C9);
+}
+
+.case-studies-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.case-study-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 399px;
+  height: 399px;
+  padding: 20px;
+  flex-basis: calc(33.33% - 20px); /* 33.33% width with 20px margin in between */
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Include padding and border in the width */
+  background-size: cover;
+  background-position: center;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  border: none; /* Hide the border */
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.case-study-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 250px 0px 0px 0px;
+  margin-bottom: 10px; 
+  color: #fff;
+}
+
+.case-study-description {
+  font-size: 16px;
+  color: #fff;
+}
